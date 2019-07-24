@@ -1,14 +1,22 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
 
-// var add = (function() {
-//     var counter = 0;
-//     return function() { counter += 1; return counter }
-// })();
 
-// add();
-// add();
-// add();
+
+function Name() {
+    let myValue = 'Benjamin!';
+    let myValue2 = 'is getting it!';
+
+    function hello() {
+        console.log('Hello, ' + myValue + myValue2);
+    }
+    return hello;
+}
+
+let testFunc = Name();
+testFunc();
+
+
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
